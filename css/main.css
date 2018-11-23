@@ -48,3 +48,25 @@ html {
 .card-body p {
   margin: 0 0 1.3rem;
 }
+
+@media only screen and (min-width: 25em) {
+
+  .card {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .card-img {
+    display: inline-block;
+  }
+
+  .card-body {
+    display: inline-block;
+    margin: 0 auto 1.3rem;
+  }
+
+  .card-body p {
+    display: inline-block;
+  }
+
+}
