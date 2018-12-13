@@ -19,7 +19,7 @@ html {
 
 .cards {
   display: block;
-  list-style: none;
+  list-style-type: none;
   padding: 0;
   margin: 0 0 1.3rem;
 }
@@ -29,10 +29,10 @@ html {
   text-align: center;
 }
 
-.card-img {
+.card-img img {
   width: 50px;
-  display: inline;
-  margin: 0 0 1em;
+  display: inline-block;
+  margin: 0 0 1rem;
 }
 
 .card-body {
@@ -52,8 +52,114 @@ html {
 @media only screen and (min-width: 25em) {
 
   .card {
-    display: inline-block;
+    display: inline;
     text-align: left;
+  }
+
+  .card-img {
+    display: inline-block;
+    margin-right: .75em;
+  }
+
+  .card-body {
+    display: inline-block;
+    max-width: 75%;
+    margin: 0 0 1.3rem;
+  }
+
+  .card-body p {
+    display: inline-block;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  .cards {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .card {
+    display: inline-block;
+    text-align: center;
+    width: 32%;
+  }
+
+  .card-img {
+    display: inline;
+  }
+
+  .card-body {
+    max-width: none;
+    display: block;
+    text-align: left;
+    margin: 0 0 1.4rem;
+  }
+
+  .card-body p {
+    display: block;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  .cards {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .card {
+    display: inline-block;
+    text-align: center;
+    width: 32%;
+  }
+
+  .card-img {
+    display: inline;
+  }
+
+  .card-body {
+    display: block;
+    text-align: left;
+    margin: 0 0 1.5rem;
+  }
+
+  .card-body p {
+    display: block;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
+  .cards {
+    display: inline-block;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .card {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 30%;
   }
 
   .card-img {
@@ -62,7 +168,13 @@ html {
 
   .card-body {
     display: inline-block;
-    margin: 0 auto 1.3rem;
+    text-align: left;
+    margin: 0 0 1.5rem;
+    width: 85%;
+  }
+
+  .card-body h2 {
+    display: block;
   }
 
   .card-body p {
